@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 44;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -18,6 +18,7 @@
 				ABA0F2160F96503300547050 /* PBXTargetDependency */,
 				ABA0F22F0F9651D000547050 /* PBXTargetDependency */,
 				ABFBE5330F96565800D01BC5 /* PBXTargetDependency */,
+				CE49AC3215EBD8E4005798B5 /* PBXTargetDependency */,
 				ABFBE5580F96594600D01BC5 /* PBXTargetDependency */,
 				12E0057D12DF4AA600DECFFB /* PBXTargetDependency */,
 			);
@@ -29,7 +30,6 @@
 /* Begin PBXBuildFile section */
 		12BDBD1A12CA279B00188AD8 /* alpsconfigload.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BDBD1912CA279B00188AD8 /* alpsconfigload.m */; };
 		12E0049012DF3B9800DECFFB /* VoodooPS2ALPSMultiTouch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12E0048E12DF3B9800DECFFB /* VoodooPS2ALPSMultiTouch.cpp */; };
-		12E0050C12DF45CF00DECFFB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12E0050B12DF45CF00DECFFB /* Info.plist */; };
 		AB30960C0F963E2F0007C6C8 /* ApplePS2KeyboardDevice.h in Export headers */ = {isa = PBXBuildFile; fileRef = AB3096070F963E2F0007C6C8 /* ApplePS2KeyboardDevice.h */; };
 		AB30960E0F963E2F0007C6C8 /* VoodooPS2.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3096090F963E2F0007C6C8 /* VoodooPS2.h */; };
 		AB30960F0F963E2F0007C6C8 /* VoodooPS2Controller.h in Headers */ = {isa = PBXBuildFile; fileRef = AB30960A0F963E2F0007C6C8 /* VoodooPS2Controller.h */; };
@@ -57,6 +57,8 @@
 		ABFBE52B0F96561000D01BC5 /* VoodooPS2_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = ABFBE5220F9654F800D01BC5 /* VoodooPS2_Prefix.pch */; };
 		ABFBE52C0F96561000D01BC5 /* VoodooPS2Pref.h in Headers */ = {isa = PBXBuildFile; fileRef = ABFBE5230F9654F800D01BC5 /* VoodooPS2Pref.h */; };
 		ABFBE53B0F96570C00D01BC5 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFBE53A0F96570C00D01BC5 /* PreferencePanes.framework */; };
+		CE49AC3315EBD960005798B5 /* VoodooPS2ElanTrackpad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE49AC2F15EBD4CB005798B5 /* VoodooPS2ElanTrackpad.cpp */; };
+		CEF2C21A15EC0F0B006174FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEF2C21715EC0EFD006174FE /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = ABFBE54A0F9657A500D01BC5;
 			remoteInfo = synapticsconfigload;
+		};
+		CE49AC3115EBD8E4005798B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE49AC1D15EBD39D005798B5;
+			remoteInfo = VoodooPS2ElanTrackpad;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -177,6 +186,11 @@
 		ABFBE54B0F9657A500D01BC5 /* synapticsconfigload */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = synapticsconfigload; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABFBE5540F96591200D01BC5 /* synapticsconfigload_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = synapticsconfigload_Prefix.pch; path = synapticsconfigload/synapticsconfigload_Prefix.pch; sourceTree = "<group>"; };
 		ABFBE5550F96591E00D01BC5 /* synapticsconfigload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = synapticsconfigload.m; path = synapticsconfigload/synapticsconfigload.m; sourceTree = "<group>"; };
+		CE49AC2A15EBD39D005798B5 /* VoodooPS2ElanTrackpad.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoodooPS2ElanTrackpad.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE49AC2E15EBD4CB005798B5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = VoodooPS2ElanTrackpad/Info.plist; sourceTree = "<group>"; };
+		CE49AC2F15EBD4CB005798B5 /* VoodooPS2ElanTrackpad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VoodooPS2ElanTrackpad.cpp; path = VoodooPS2ElanTrackpad/VoodooPS2ElanTrackpad.cpp; sourceTree = "<group>"; };
+		CE49AC3015EBD4CB005798B5 /* VoodooPS2ElanTrackpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VoodooPS2ElanTrackpad.h; path = VoodooPS2ElanTrackpad/VoodooPS2ElanTrackpad.h; sourceTree = "<group>"; };
+		CEF2C21815EC0EFD006174FE /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = VoodooPS2ElanTrackpad/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +244,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE49AC2415EBD39D005798B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -246,6 +267,7 @@
 				ABA0F2240F96516B00547050 /* PS2 Trackpad Resources */,
 				ABFBE5140F96549200D01BC5 /* PS2 Synaptics Pane Resources */,
 				19C28FB6FE9D52B211CA2CBB /* Products */,
+				CE49AC2D15EBD3D9005798B5 /* PS2ElanTrackpad */,
 			);
 			name = VoodooPS2Controller;
 			sourceTree = "<group>";
@@ -280,6 +302,7 @@
 				ABFBE5030F96544B00D01BC5 /* VoodooPS2.prefpane */,
 				ABFBE54B0F9657A500D01BC5 /* synapticsconfigload */,
 				12E0046A12DF399B00DECFFB /* ALPSMultitouch.kext */,
+				CE49AC2A15EBD39D005798B5 /* VoodooPS2ElanTrackpad.kext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -369,6 +392,17 @@
 				ABFBE51A0F9654CA00D01BC5 /* VoodooPS2Pref.tiff */,
 			);
 			name = "PS2 Synaptics Pane Resources";
+			sourceTree = "<group>";
+		};
+		CE49AC2D15EBD3D9005798B5 /* PS2ElanTrackpad */ = {
+			isa = PBXGroup;
+			children = (
+				CEF2C21715EC0EFD006174FE /* InfoPlist.strings */,
+				CE49AC2E15EBD4CB005798B5 /* Info.plist */,
+				CE49AC2F15EBD4CB005798B5 /* VoodooPS2ElanTrackpad.cpp */,
+				CE49AC3015EBD4CB005798B5 /* VoodooPS2ElanTrackpad.h */,
+			);
+			name = PS2ElanTrackpad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,13 +581,33 @@
 			productReference = ABFBE54B0F9657A500D01BC5 /* synapticsconfigload */;
 			productType = "com.apple.product-type.tool";
 		};
+		CE49AC1D15EBD39D005798B5 /* VoodooPS2ElanTrackpad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE49AC2515EBD39D005798B5 /* Build configuration list for PBXNativeTarget "VoodooPS2ElanTrackpad" */;
+			buildPhases = (
+				CE49AC1E15EBD39D005798B5 /* Sources */,
+				CE49AC2215EBD39D005798B5 /* Resources */,
+				CE49AC2415EBD39D005798B5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoodooPS2ElanTrackpad;
+			productName = VoodooPS2Trackpad;
+			productReference = CE49AC2A15EBD39D005798B5 /* VoodooPS2ElanTrackpad.kext */;
+			productType = "com.apple.product-type.kernel-extension.iokit";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
 			buildConfigurationList = 1DEB91DD08733DB10010E9CD /* Build configuration list for PBXProject "VoodooPS2" */;
-			compatibilityVersion = "Xcode 3.0";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -574,6 +628,7 @@
 				ABFBE5020F96544B00D01BC5 /* VoodooPS2SynapticsPane */,
 				ABFBE54A0F9657A500D01BC5 /* alpsconfigload */,
 				12E0046912DF399B00DECFFB /* ALPSMultitouch */,
+				CE49AC1D15EBD39D005798B5 /* VoodooPS2ElanTrackpad */,
 			);
 		};
 /* End PBXProject section */
@@ -583,7 +638,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12E0050C12DF45CF00DECFFB /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +680,14 @@
 				ABFBE51B0F9654CA00D01BC5 /* VoodooPS2Pref.tiff in Resources */,
 				ABFBE51E0F9654D800D01BC5 /* InfoPlist.strings in Resources */,
 				ABFBE5210F9654E200D01BC5 /* VoodooPS2Pref.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE49AC2215EBD39D005798B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF2C21A15EC0F0B006174FE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,6 +873,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE49AC1E15EBD39D005798B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE49AC3315EBD960005798B5 /* VoodooPS2ElanTrackpad.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -848,6 +918,11 @@
 			isa = PBXTargetDependency;
 			target = ABFBE54A0F9657A500D01BC5 /* alpsconfigload */;
 			targetProxy = ABFBE5570F96594600D01BC5 /* PBXContainerItemProxy */;
+		};
+		CE49AC3215EBD8E4005798B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE49AC1D15EBD39D005798B5 /* VoodooPS2ElanTrackpad */;
+			targetProxy = CE49AC3115EBD8E4005798B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -900,6 +975,14 @@
 			name = VoodooPS2Pref.xib;
 			sourceTree = "<group>";
 		};
+		CEF2C21715EC0EFD006174FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF2C21815EC0EFD006174FE /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -907,17 +990,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = ALPSMultitouch/Info.plist;
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
 				MODULE_NAME = "";
 				MODULE_VERSION = 1.0.0d1;
-				PREBINDING = NO;
 				PRODUCT_NAME = ALPSMultitouch;
 				WRAPPER_EXTENSION = kext;
 			};
@@ -927,9 +1009,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				INFOPLIST_FILE = ALPSMultitouch/Info.plist;
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
 				MACOSX_DEPLOYMENT_TARGET = "";
@@ -940,7 +1022,6 @@
 					"-DKERNEL_PRIVATE",
 					"-DSNOW_LEO",
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ALPSMultitouch;
 				WRAPPER_EXTENSION = kext;
 				ZERO_LINK = NO;
@@ -951,14 +1032,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = "ALPSMultitouch-Info.plist";
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
 				MODULE_NAME = org.projectosx.theking.ALPSMultitouch;
 				MODULE_VERSION = 1.0.0d1;
-				PREBINDING = NO;
 				PRODUCT_NAME = ALPSMultitouch;
 				WRAPPER_EXTENSION = kext;
 			};
@@ -968,14 +1048,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = "ALPSMultitouch-Info.plist";
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
 				MODULE_NAME = org.projectosx.theking.ALPSMultitouch;
 				MODULE_VERSION = 1.0.0d1;
-				PREBINDING = NO;
 				PRODUCT_NAME = ALPSMultitouch;
 				WRAPPER_EXTENSION = kext;
 			};
@@ -984,6 +1063,7 @@
 		1DEB91DA08733DB10010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1.1.0;
 				DYLIB_COMPATIBILITY_VERSION = 1.1.0;
@@ -1006,6 +1086,7 @@
 		1DEB91DB08733DB10010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/";
 				CURRENT_PROJECT_VERSION = 1.1.0;
 				DEBUG_INFORMATION_FORMAT = "";
@@ -1027,21 +1108,18 @@
 		1DEB91DE08733DB10010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					x86_64,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-DAPPLESDK=0",
 					"-DSNOW_LEO",
 				);
-				PREBINDING = NO;
-				SDKROOT = "";
+				SDKROOT = macosx10.7;
 				VALID_ARCHS = "x86_64 i386";
 			};
 			name = Debug;
@@ -1049,8 +1127,7 @@
 		1DEB91DF08733DB10010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
 				ENABLE_OPENMP_SUPPORT = YES;
 				GCC_AUTO_VECTORIZATION = YES;
@@ -1061,37 +1138,36 @@
 				GCC_MODEL_TUNING = "";
 				GCC_OBJC_CALL_CXX_CDTORS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-DKERNEL_PRIVATE",
 					"-DAPPLESDK=0",
 					"-DSNOW_LEO",
 				);
-				PREBINDING = NO;
-				VALID_ARCHS = "i386 x86_64";
+				SDKROOT = macosx10.7;
+				VALID_ARCHS = "x86_64 i386";
 			};
 			name = Release;
 		};
 		AB73060B0F96412C0088A57F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1.1.0;
 				DYLIB_COMPATIBILITY_VERSION = 1.1.0;
 				DYLIB_CURRENT_VERSION = 1.1.0;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = VoodooPS2Keyboard/Info.plist;
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/VoodooPS2Controller.kext/Contents/PlugIns";
 				MODULE_NAME = org.voodoo.driver.PS2Keyboard;
 				MODULE_VERSION = 1.1.0;
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2Keyboard;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
@@ -1103,20 +1179,19 @@
 		AB73060C0F96412C0088A57F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1.1.1;
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.1.1;
 				DYLIB_CURRENT_VERSION = 1.1.1;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = VoodooPS2Keyboard/Info.plist;
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/VoodooPS2Controller.kext/Contents/PlugIns";
 				MODULE_NAME = org.voodoo.driver.PS2Keyboard;
 				MODULE_VERSION = 1.1.1;
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2Keyboard;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "";
@@ -1128,24 +1203,29 @@
 		ABA0F1C40F96427E00547050 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = All;
+				SDKROOT = macosx10.7;
+				VALID_ARCHS = "x86_64 i386";
 			};
 			name = Debug;
 		};
 		ABA0F1C50F96427E00547050 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = All;
+				SDKROOT = macosx10.7;
+				VALID_ARCHS = "x86_64 i386";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1153,20 +1233,19 @@
 		ABA0F1F80F96447100547050 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1.2.0;
 				DYLIB_COMPATIBILITY_VERSION = 1.2.0;
 				DYLIB_CURRENT_VERSION = 1.2.0;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = VoodooPS2Mouse/Info.plist;
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/VoodooPS2Controller.kext/Contents/PlugIns";
 				MODULE_NAME = org.voodoo.driver.PS2Mouse;
 				MODULE_VERSION = 1.2.0;
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2Mouse;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
@@ -1178,20 +1257,19 @@
 		ABA0F1F90F96447100547050 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1.2.1;
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.2.1;
 				DYLIB_CURRENT_VERSION = 1.2.1;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = VoodooPS2Mouse/Info.plist;
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/VoodooPS2Controller.kext/Contents/PlugIns";
 				MODULE_NAME = org.voodoo.driver.PS2Mouse;
 				MODULE_VERSION = 1.2.1;
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2Mouse;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "";
@@ -1203,24 +1281,20 @@
 		ABA0F22B0F96518500547050 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					x86_64,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1.1.0;
 				DYLIB_COMPATIBILITY_VERSION = 1.1.1;
 				DYLIB_CURRENT_VERSION = 1.1.1;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = VoodooPS2Trackpad/Info.plist;
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
 				MODULE_NAME = org.voodoo.driver.PS2Trackpad;
 				MODULE_VERSION = 1.1.1;
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2Trackpad;
 				VALID_ARCHS = "x86_64 i386";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1233,19 +1307,18 @@
 		ABA0F22C0F96518500547050 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1.1.1;
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.1.1;
 				DYLIB_CURRENT_VERSION = 1.1.1;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				INFOPLIST_FILE = VoodooPS2Trackpad/Info.plist;
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
 				MODULE_NAME = org.voodoo.driver.PS2Trackpad;
 				MODULE_VERSION = 1.1.1;
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2Trackpad;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "";
@@ -1257,8 +1330,7 @@
 		ABC8E15712B3EC120091ECB7 /* Release Leopard */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ENABLE_OPENMP_SUPPORT = YES;
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_DEBUGGING_SYMBOLS = "";
@@ -1268,12 +1340,11 @@
 				GCC_MODEL_TUNING = "";
 				GCC_OBJC_CALL_CXX_CDTORS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.7;
 				VALID_ARCHS = i386;
 			};
 			name = "Release Leopard";
@@ -1281,10 +1352,14 @@
 		ABC8E15812B3EC120091ECB7 /* Release Leopard */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = All;
+				SDKROOT = macosx10.7;
+				VALID_ARCHS = i386;
 				ZERO_LINK = NO;
 			};
 			name = "Release Leopard";
@@ -1292,6 +1367,7 @@
 		ABC8E15912B3EC120091ECB7 /* Release Leopard */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.1.0;
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.1.0;
@@ -1312,19 +1388,18 @@
 		ABC8E15A12B3EC120091ECB7 /* Release Leopard */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1.1.0;
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.1.0;
 				DYLIB_CURRENT_VERSION = 1.1.0;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				INFOPLIST_FILE = VoodooPS2Keyboard/Info.plist;
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/VoodooPS2Controller.kext/Contents/PlugIns";
 				MODULE_NAME = org.voodoo.driver.PS2Keyboard;
 				MODULE_VERSION = 1.1.0;
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2Keyboard;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
@@ -1336,19 +1411,18 @@
 		ABC8E15B12B3EC120091ECB7 /* Release Leopard */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1.2.0;
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.2.0;
 				DYLIB_CURRENT_VERSION = 1.2.0;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				INFOPLIST_FILE = VoodooPS2Mouse/Info.plist;
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/VoodooPS2Controller.kext/Contents/PlugIns";
 				MODULE_NAME = org.voodoo.driver.PS2Mouse;
 				MODULE_VERSION = 1.2.0;
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2Mouse;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
@@ -1360,19 +1434,18 @@
 		ABC8E15C12B3EC120091ECB7 /* Release Leopard */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1.1.0;
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.1.0;
 				DYLIB_CURRENT_VERSION = 1.1.0;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				INFOPLIST_FILE = VoodooPS2Trackpad/Info.plist;
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
 				MODULE_NAME = org.voodoo.driver.PS2Trackpad;
 				MODULE_VERSION = 1.1.0;
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2Trackpad;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
@@ -1384,12 +1457,12 @@
 		ABC8E15D12B3EC120091ECB7 /* Release Leopard */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 1.0;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = VoodooPS2SynapticsPane/VoodooPS2_Prefix.pch;
@@ -1403,9 +1476,8 @@
 					"-framework",
 					CoreFoundation,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT = macosx10.7;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
 				WRAPPER_EXTENSION = prefpane;
@@ -1421,7 +1493,6 @@
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 1.0;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				INSTALL_PATH = /usr/local/bin;
 				OTHER_LDFLAGS = (
@@ -1432,7 +1503,6 @@
 					"-framework",
 					IOKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = synapticsconfigload;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
@@ -1443,8 +1513,7 @@
 		ABC8E16C12B3ECB80091ECB7 /* Release Tiger */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ENABLE_OPENMP_SUPPORT = YES;
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_DEBUGGING_SYMBOLS = "";
@@ -1454,12 +1523,11 @@
 				GCC_MODEL_TUNING = "";
 				GCC_OBJC_CALL_CXX_CDTORS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_VERSION = 4.0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.7;
 				VALID_ARCHS = i386;
 			};
 			name = "Release Tiger";
@@ -1467,10 +1535,14 @@
 		ABC8E16D12B3ECB80091ECB7 /* Release Tiger */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = All;
+				SDKROOT = macosx10.7;
+				VALID_ARCHS = i386;
 				ZERO_LINK = NO;
 			};
 			name = "Release Tiger";
@@ -1478,6 +1550,7 @@
 		ABC8E16E12B3ECB80091ECB7 /* Release Tiger */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.1.0;
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.1.0;
@@ -1498,19 +1571,18 @@
 		ABC8E16F12B3ECB80091ECB7 /* Release Tiger */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1.1.0;
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.1.0;
 				DYLIB_CURRENT_VERSION = 1.1.0;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				INFOPLIST_FILE = VoodooPS2Keyboard/Info.plist;
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/VoodooPS2Controller.kext/Contents/PlugIns";
 				MODULE_NAME = org.voodoo.driver.PS2Keyboard;
 				MODULE_VERSION = 1.1.0;
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2Keyboard;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
@@ -1522,19 +1594,18 @@
 		ABC8E17012B3ECB80091ECB7 /* Release Tiger */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1.2.0;
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.2.0;
 				DYLIB_CURRENT_VERSION = 1.2.0;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				INFOPLIST_FILE = VoodooPS2Mouse/Info.plist;
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/VoodooPS2Controller.kext/Contents/PlugIns";
 				MODULE_NAME = org.voodoo.driver.PS2Mouse;
 				MODULE_VERSION = 1.2.0;
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2Mouse;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
@@ -1546,19 +1617,18 @@
 		ABC8E17112B3ECB80091ECB7 /* Release Tiger */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1.1.0;
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.1.0;
 				DYLIB_CURRENT_VERSION = 1.1.0;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				INFOPLIST_FILE = VoodooPS2Trackpad/Info.plist;
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
 				MODULE_NAME = org.voodoo.driver.PS2Trackpad;
 				MODULE_VERSION = 1.1.0;
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2Trackpad;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
@@ -1570,12 +1640,12 @@
 		ABC8E17212B3ECB80091ECB7 /* Release Tiger */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 1.0;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = VoodooPS2SynapticsPane/VoodooPS2_Prefix.pch;
@@ -1589,9 +1659,8 @@
 					"-framework",
 					CoreFoundation,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT = macosx10.7;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
 				WRAPPER_EXTENSION = prefpane;
@@ -1607,7 +1676,6 @@
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 1.0;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				INSTALL_PATH = /usr/local/bin;
 				OTHER_LDFLAGS = (
@@ -1618,7 +1686,6 @@
 					"-framework",
 					IOKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = synapticsconfigload;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
@@ -1629,12 +1696,12 @@
 		ABFBE5050F96544C00D01BC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 1.0;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1649,9 +1716,8 @@
 					"-framework",
 					CoreFoundation,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT = macosx10.7;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
 				WRAPPER_EXTENSION = prefpane;
@@ -1662,13 +1728,13 @@
 		ABFBE5060F96544C00D01BC5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/";
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 1.0;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = VoodooPS2SynapticsPane/VoodooPS2_Prefix.pch;
@@ -1682,9 +1748,8 @@
 					"-framework",
 					CoreFoundation,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = VoodooPS2;
-				SDKROOT = "";
+				SDKROOT = macosx10.7;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
 				WRAPPER_EXTENSION = prefpane;
@@ -1700,7 +1765,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 1.0;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INSTALL_PATH = /usr/local/bin;
@@ -1712,7 +1776,6 @@
 					"-framework",
 					IOKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = synapticsconfigload;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
@@ -1729,7 +1792,6 @@
 				DEBUG_INFORMATION_FORMAT = "";
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 1.0;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = "";
 				INSTALL_PATH = /usr/local/bin;
 				OTHER_LDFLAGS = (
@@ -1740,13 +1802,118 @@
 					"-framework",
 					IOKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = synapticsconfigload;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_BUILDER = "AnV Software";
 				ZERO_LINK = NO;
 			};
 			name = Release;
+		};
+		CE49AC2615EBD39D005798B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.1.0;
+				DYLIB_COMPATIBILITY_VERSION = 1.1.1;
+				DYLIB_CURRENT_VERSION = 1.1.1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = VoodooPS2ElanTrackpad/Info.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = org.voodoo.driver.PS2ElanTrackpad;
+				MODULE_VERSION = 1.1.1;
+				PRODUCT_NAME = VoodooPS2ElanTrackpad;
+				SDKROOT = macosx10.7;
+				VALID_ARCHS = "x86_64 i386";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_BUILDER = "AnV Software";
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		CE49AC2715EBD39D005798B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1.1.1;
+				DEBUG_INFORMATION_FORMAT = "";
+				DYLIB_COMPATIBILITY_VERSION = 1.1.1;
+				DYLIB_CURRENT_VERSION = 1.1.1;
+				GCC_MODEL_TUNING = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = VoodooPS2ElanTrackpad/Info.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = org.voodoo.driver.PS2ElanTrackpad;
+				MODULE_VERSION = 1.1.1;
+				PRODUCT_NAME = VoodooPS2ElanTrackpad;
+				SDKROOT = macosx10.7;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_BUILDER = "";
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		CE49AC2815EBD39D005798B5 /* Release Leopard */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1.1.0;
+				DEBUG_INFORMATION_FORMAT = "";
+				DYLIB_COMPATIBILITY_VERSION = 1.1.0;
+				DYLIB_CURRENT_VERSION = 1.1.0;
+				GCC_MODEL_TUNING = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = VoodooPS2ElanTrackpad/Info.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = org.voodoo.driver.PS2ElanTrackpad;
+				MODULE_VERSION = 1.1.0;
+				PRODUCT_NAME = VoodooPS2ElanTrackpad;
+				SDKROOT = macosx10.7;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_BUILDER = "AnV Software";
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = "Release Leopard";
+		};
+		CE49AC2915EBD39D005798B5 /* Release Tiger */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)/VoodooPS2Controller.kext/Contents/PlugIns";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1.1.0;
+				DEBUG_INFORMATION_FORMAT = "";
+				DYLIB_COMPATIBILITY_VERSION = 1.1.0;
+				DYLIB_CURRENT_VERSION = 1.1.0;
+				GCC_MODEL_TUNING = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = VoodooPS2ElanTrackpad/Info.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = org.voodoo.driver.PS2ElanTrackpad;
+				MODULE_VERSION = 1.1.0;
+				PRODUCT_NAME = VoodooPS2ElanTrackpad;
+				SDKROOT = macosx10.7;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_BUILDER = "AnV Software";
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = "Release Tiger";
 		};
 /* End XCBuildConfiguration section */
 
@@ -1846,6 +2013,17 @@
 				ABFBE54E0F9657A600D01BC5 /* Release */,
 				ABC8E15E12B3EC120091ECB7 /* Release Leopard */,
 				ABC8E17312B3ECB80091ECB7 /* Release Tiger */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE49AC2515EBD39D005798B5 /* Build configuration list for PBXNativeTarget "VoodooPS2ElanTrackpad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE49AC2615EBD39D005798B5 /* Debug */,
+				CE49AC2715EBD39D005798B5 /* Release */,
+				CE49AC2815EBD39D005798B5 /* Release Leopard */,
+				CE49AC2915EBD39D005798B5 /* Release Tiger */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
